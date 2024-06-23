@@ -4,9 +4,10 @@
 #include "Rectangle.h"
 #include "SmartHome.h"
 #include "Music.h"
+#include "Polynomial.h"
 using namespace std;
 
-void main() {
+int main() {
 	/*
 	//Car 클래스 사용
 	Car myCar(50, "K3", 4);
@@ -22,12 +23,15 @@ void main() {
 
 }
 
+
+//Rectangle 클래스 
+
 void main() {
 	Rectangle r(10, 20);
 	double perimeter=r.getPerimeter();
 	double area = r.getArea();
-	std::cout << "Rectangle 1:" << std::endl;
-	std::cout << "Area:" << r.getArea() << std::endl;
+	cout << "Rectangle 1:" << endl;
+	cout << "Area:" << r.getArea() << endl;
 	cout << "Perimeter" << perimeter << endl;
 	cout << "Is square?" << boolalpha << r.isSquare() << endl;
 }
@@ -36,8 +40,8 @@ void main() {
 
 
 	SmartHome myHome("남효은", 23, 40, true);
-	myHome.printStatus();
-	*/
+	myHome.printStatus();*/
+	
 	
 	MusicStreamingService myService("Spotify");
 	myService.addMusic("VIBE", "TaeYang", "Album", 2023);
@@ -67,8 +71,10 @@ void main() {
 				cout << artistResult[i]->getTitle() << endl;
 		}
 	}
-	else {
+	else
 		cout << "Not found" << endl;
-	}
+	
+	vector<Music*> result = myService.searchByArtist()
+	if (result.size()>0)
 
 }

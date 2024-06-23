@@ -60,15 +60,18 @@ public:
         return NULL;
     }
 
+
     // Searches for music by artist
     vector<Music*> searchByArtist(string artist) {
         vector<Music*> result;
         for (int i = 0; i < musicList.size(); i++) {
             if (musicList[i].getArtist() == artist) {
                 result.push_back(&musicList[i]);
+
             }
         }
         return result;
     }
+
 
 };

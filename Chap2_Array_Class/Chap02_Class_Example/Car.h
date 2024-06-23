@@ -7,9 +7,9 @@ protected:
 	char name[40];
 public:
 	int gear;
-	Car() {}
+	Car() {}								//기본생성자
 	~Car() {}
-	Car(int s, const char* n, int g)
+	Car(int s, const char* n, int g)		//매개변수가 있는 생성자
 		:speed(s), gear(g) {
 		strcpy_s(name, n);
 	}

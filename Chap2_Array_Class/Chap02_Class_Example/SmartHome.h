@@ -8,8 +8,8 @@ class SmartHome {
 private:
     //클래스 변수들(member variable, attribute, field) - 시험에 나옴!!
     string owner;   //문자열
-    int temperature;    //정수형
-    int humidity;   
+    int temperature;    //온도
+    int humidity;       //습도
     bool security;  //true or false
 public:
     //클래스 함수들(member function, method) - 시험에 나옴!!
